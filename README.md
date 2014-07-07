@@ -25,11 +25,14 @@ Get the icon object, check it and use:
 	  {{ icon.icon }}
 	{% endif %}
 	
-Options:
+Output the full icon tag:
 
-  {{ icon.icon }} - Output the full icon tag  eg <i class="fa fa-home"></i>
-  {{ icon.class }} - Just output the icon class eg 'fa-home'
+	{{ icon.icon }} = <i class="fa fa-home"></i>
+	
+Just output the icon class
 
+	{{ icon.class }} = fa-home
+	
 
 ## Requirements
 
