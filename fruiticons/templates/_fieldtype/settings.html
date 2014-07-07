@@ -1,0 +1,10 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.selectField({
+	label: "Icon Family"|t,
+	instructions: "Select the icon family you would like to use for this field.",
+	id: 'vendor',
+	name: 'vendor',
+	options: vendors,
+	values: settings.vendor
+}) }}
