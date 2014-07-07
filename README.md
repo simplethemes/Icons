@@ -29,7 +29,7 @@ Output the full icon tag:
 
 	{{ icon.icon }} = <i class="fa fa-home"></i>
 	
-Just output the icon class
+Just output the icon class:
 
 	{{ icon.class }} = fa-home
 	
