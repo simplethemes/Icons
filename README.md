@@ -49,6 +49,10 @@ Craft CMS Version 2.1+
 
 ## Changelog
 
+### 0.9.2
+
+* New Setting - Defualt Icon
+
 ### 0.9.1
 
 * Fixed Craft default validation (Required now works)
