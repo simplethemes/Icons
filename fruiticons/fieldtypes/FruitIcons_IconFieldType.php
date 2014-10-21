@@ -61,6 +61,8 @@ class FruitIcons_IconFieldType extends BaseFieldType
 	protected function defineSettings()
 	{
 		$settings['vendor'] = AttributeType::String;
+		$settings['defaultIcon'] = AttributeType::Bool;
+		$settings['defaultIconClass'] = AttributeType::String;
 		//$settings['customVendorName'] = AttributeType::String;	
 		//$settings['customVendorTag'] = AttributeType::String;	
 		//$settings['customVendorIcons'] = AttributeType::String;	
@@ -109,11 +111,10 @@ class FruitIcons_IconFieldType extends BaseFieldType
     	craft()->templates->includeJsResource('fruiticons/js/icons.js');
     	craft()->templates->includeCssResource('fruiticons/css/icons.css');
 
-
 		// Render The Field
     	return craft()->templates->render('fruiticons/_fieldtype/input', array(
             'name'  => $name,
-            'value'  => $value,
+            'value'  => isset($value['isDefault']) ? null : $value,
             'icons' => $icons,
             'settings' => $settings
         )); 
@@ -147,9 +148,19 @@ class FruitIcons_IconFieldType extends BaseFieldType
 	 */
 	public function prepValue($value)
 	{
+		// Settings
+		$settings = $this->getSettings();
+		
 		if(is_array($value))
 		{
 			$value['icon'] = TemplateHelper::getRaw($value['icon']);
+		}
+		elseif($settings['defaultIcon'])
+		{
+			// Default Icon
+			$value['isDefault'] = true;
+			$value['class'] = $settings['defaultIconClass'];
+			$value['icon'] = TemplateHelper::getRaw('<i class="fa '.$settings['defaultIconClass'].'"></i>');
 		}
 
 		/*
@@ -190,7 +201,6 @@ class FruitIcons_IconFieldType extends BaseFieldType
 			}
 		}
 		*/
-
 		
 		return is_array($value) ? $value : null;
 	}    
