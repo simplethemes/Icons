@@ -134,8 +134,8 @@ class FruitIcons_IconFieldType extends BaseFieldType
 				'class' => $value,
 				'icon' => '<i class="fa '.$value.'"></i>'
 			);
-		}
-		return json_encode($value);
+ 		}
+		return is_array($value) ? json_encode($value) : $value;
 	}
 
 
@@ -192,7 +192,7 @@ class FruitIcons_IconFieldType extends BaseFieldType
 		*/
 
 		
-		return $value;
+		return is_array($value) ? $value : null;
 	}    
 	
 
