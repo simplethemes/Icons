@@ -49,6 +49,10 @@ Craft CMS Version 2.1+
 
 ## Changelog
 
+### 0.9.3
+
+* Added support for Matrix. Thanks to rkingon
+
 ### 0.9.2
 
 * New Setting - Defualt Icon
