@@ -10,7 +10,7 @@ class FruitIconsPlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '0.9.4';
+        return '0.9.5';
     }
 
     public function getDeveloper()
