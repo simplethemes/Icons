@@ -110,6 +110,9 @@ class FruitIcons_IconFieldType extends BaseFieldType
        	// Plugin Includes
     	craft()->templates->includeJsResource('fruiticons/js/icons.js');
     	craft()->templates->includeCssResource('fruiticons/css/icons.css');
+    	
+    	$id = craft()->templates->formatInputId($name);
+        craft()->templates->includeJs('var fruitIcons = new FruitIcons("'.craft()->templates->namespaceInputId($id).'");');
 
 		// Render The Field
     	return craft()->templates->render('fruiticons/_fieldtype/input', array(
