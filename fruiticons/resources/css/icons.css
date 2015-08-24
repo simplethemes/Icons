@@ -19,3 +19,7 @@
 	line-height: 18px;
 }
 .selectize-dropdown.fr-icon-select .fr-option-maker {opacity: 0.5;}
+
+.fr-icon {
+	display: none;
+}
