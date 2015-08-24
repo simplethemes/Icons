@@ -51,12 +51,8 @@ Craft CMS Version 2.1+
 
 ### 0.9.5
 
+* Updated to Font Awesome 4.4.0. Thanks to justjoolz.
 * Matrix block bug fix.
-
-### 0.9.4
-
-* Updated to Font Awesome 4.4.0
-
 
 ### 0.9.3
 
