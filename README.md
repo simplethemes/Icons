@@ -6,7 +6,7 @@ Simple fieldtype which allows you to select font icons ready to use within your 
 
 Currently supports:
 
-* Font Awesome (4.1.0)
+* Font Awesome (4.4.0)
 
 ## Installation
 
@@ -48,6 +48,11 @@ Craft CMS Version 2.1+
 
 
 ## Changelog
+
+### 0.9.4
+
+* Updated to Font Awesome 4.4.0
+
 
 ### 0.9.3
 

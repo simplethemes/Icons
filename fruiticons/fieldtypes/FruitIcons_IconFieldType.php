@@ -105,7 +105,7 @@ class FruitIcons_IconFieldType extends BaseFieldType
     	craft()->templates->includeCssResource('fruiticons/tools/selectize/css/selectize.default.css');    
 
        	// Font Libraries
-    	craft()->templates->includeCssFile('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css');
+    	craft()->templates->includeCssFile('//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
        	// Plugin Includes
     	craft()->templates->includeJsResource('fruiticons/js/icons.js');
