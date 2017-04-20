@@ -200,7 +200,7 @@ class FruitIcons_IconFieldType extends BaseFieldType
 			// Default Icon
 			$value['isDefault'] = true;
 			$value['class'] = $settings['defaultIconClass'];
-            $value['icon'] = craft()->templates->render($tpl, [ 'settings' => $settings['defaultIconClass'] ]);
+            $value['icon'] = craft()->templates->render($tpl, [ 'icon' => $settings['defaultIconClass'] ]);
 		}
 
 		/*
