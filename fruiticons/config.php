@@ -17,7 +17,7 @@ return array(
 				'arrow-up' => 'Arrow Up',
 				'arrow-down' => 'Arrow Down',
 				'arrow-left' => 'Arrow Left',
-				'arrow-right' => 'Arrow Right',			
+				'arrow-right' => 'Arrow Right',
 			)
 		),
 
